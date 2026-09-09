@@ -1,32 +1,54 @@
-# React + TypeScript + Vite
+# BLITZ — AI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+BLITZ is an AI-powered chatbot built to provide a simple and interactive way to communicate with an LLM.
 
-Currently, two official plugins are available:
+The project focuses on making AI conversations easy to manage while keeping the interface clean, responsive, and practical. It was developed as a Beginner-level AI application project with an emphasis on API integration, user interaction, validation, and a usable chatbot experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- AI-powered conversations using the Groq API
+- Streaming AI responses for a more natural chat experience
+- Stop response generation when needed
+- Regenerate an AI response
+- Copy responses easily
+- Conversation history
+- Create new chats
+- Rename conversations
+- Delete conversations
+- Clear conversation history
+- Persistent chat history
+- Dark and light theme
+- Input validation and error handling
+- Responsive and clean user interface
+- Modern UI with clear visual hierarchy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- **React** — Frontend framework
+- **TypeScript** — Type-safe development
+- **Vite** — Development and build tool
+- **Tailwind CSS** — UI styling
+- **Groq API** — AI/LLM integration
+- **Lucide React** — Icons
+- **React Markdown** — Markdown response rendering
+- **Remark GFM** — GitHub-flavored Markdown support
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## How It Works
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+The basic flow of BLITZ is:
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. User enters a message  
+2. The application validates the input  
+3. The message is sent to the Groq API  
+4. The AI response is streamed back  
+5. The response is displayed in the chat   
+6. The conversation is saved to chat history
+
+This allows BLITZ to behave more like a practical AI assistant rather than just a basic text input and output application.
+
+## Getting Started
+1. Clone the repository
+git clone <>
+2. Open the project
+cd BLITZ
+
